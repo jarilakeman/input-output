@@ -1,0 +1,32 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background: linear-gradient(to right, #E100FF, #7F00FF);
+}
+
+.container, .cameras {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container{
+    height: 100vh;
+    width: 100vw;
+    flex-direction: column;
+}
+
+.cameras {
+    border-width: 4px;
+    border-style: solid;
+    border-image: linear-gradient(to right, #232526, #414345) 1;
+}
+
+.camera{
+    border-right: 5px solid #414345;
+    transform: rotateY(180deg);
+}
